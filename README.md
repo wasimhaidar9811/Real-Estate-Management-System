@@ -1,1 +1,2 @@
 # Real-Estate-Management-System
+The Real Estate Management System is an online platform designed to streamline property management processes for three user types: Admin, Property Manager, and Tenant. Admins manage users, properties, and system settings. Property Managers handle property listings, rental agreements, and communication with tenants. Tenants can search properties and manage rental agreements. This system enhances efficiency, provides centralized management, and improves tenant experience.
