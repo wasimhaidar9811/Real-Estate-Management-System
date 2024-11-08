@@ -21,13 +21,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
         }
         .login-container h2 {
             margin-bottom: 20px;
-            text-align: center;
         }
         .form-group {
             margin-bottom: 15px;
+            text-align: left;
         }
         .form-group label {
             display: block;
@@ -39,22 +45,40 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        .login-button {
+        .login-button, .register-button, .forgot-button {
             width: 100%;
             padding: 10px;
             border: none;
-            background-color: #007bff;
-            color: white;
             border-radius: 4px;
             cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .login-button {
+            background-color: #007bff;
+            color: white;
         }
         .login-button:hover {
             background-color: #0056b3;
+        }
+        .register-button {
+            background-color: #28a745;
+            color: white;
+        }
+        .register-button:hover {
+            background-color: #218838;
+        }
+        .forgot-button {
+            background-color: #ffc107;
+            color: black;
+        }
+        .forgot-button:hover {
+            background-color: #e0a800;
         }
     </style>
 </head>
 <body>
     <div class="login-container">
+        <h1>Real Estate Management System</h1>
         <h2>Login</h2>
         <form>
             <div class="form-group">
@@ -67,6 +91,8 @@
             </div>
             <button type="submit" class="login-button">Login</button>
         </form>
+        <button class="register-button">Register</button>
+        <button class="forgot-button">Forgot Password?</button>
     </div>
 </body>
 </html>
