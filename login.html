@@ -75,12 +75,25 @@
             background-color: #e0a800;
         }
     </style>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            // Example validation logic
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (username === "user" && password === "password123") {
+                window.location.href = "home.html"; // Redirect to home page
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="login-container">
         <h1>Real Estate Management System</h1>
         <h2>Login</h2>
-        <form>
+        <form onsubmit="handleLogin(event)">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
